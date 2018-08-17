@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Main{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main main_other">
+                <div class="main__center center">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        <div class="main__btns main__btns_top">
+                            <button class="main__btn btn">
+                                <span class="btn__text">ШАМАНСКИЕ ПРАКТИКИ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">Парапсихология</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ГАРМОНИЗИРУЮЩАЯ ЖИВОПИСЬ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">“ЭФИРНОЕ ЦАРСТВО”</span></button>
+                        </div>
+                        <div class="main__btns main__btns_bot main__btns_hide">
+                            <button class="main__btn btn">
+                                <span class="btn__text">СВОЯ СТЕЗЯ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ОКНО ОТВОРЕНО</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">КОНТАКТЫ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ФОТОГАЛЕРЕЯ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ГЛОССАРИЙ</span></button>
+                        </div>
+                    </div>
+                    <a class="main__logo" href="#"><img class="main__pic" src="img/logo.png"></a>
+                    <div class="main__preview"><img class="main__photo" src="img/bird.png"></div>
+                    <div class="main__head"><img class="main__img" src="img/head.png"></div>
+                    <div class="main__text">Шаманские практики это ваш путеводитель
+                        <br>по миру шаманизма. Здесь вы найдете ответы на многие вопросы,
+                        <br>на которые вам никто не мог ответить до сих пор.</div>
+                    <div class="main__links">
+                        <a class="main__link" href="#">
+                            <div class="main__icon"><img class="main__image" src="img/pic-1.png" width="126px"></div>
+                            <div class="main__info">Балансировка энергосистемы</div>
+                        </a>
+                        <a class="main__link" href="#">
+                            <div class="main__icon"><img class="main__image" src="img/pic-2.png" width="180px"></div>
+                            <div class="main__info">Гармонизация и оздоровление
+                                <br>физического тела</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

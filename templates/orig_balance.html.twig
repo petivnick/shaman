@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Balance{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main main_balance">
+                <div class="main__center center">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        <div class="main__btns main__btns_top">
+                            <button class="main__btn btn">
+                                <span class="btn__text">ШАМАНСКИЕ ПРАКТИКИ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">Парапсихология</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ГАРМОНИЗИРУЮЩАЯ ЖИВОПИСЬ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">“ЭФИРНОЕ ЦАРСТВО”</span></button>
+                        </div>
+                        <div class="main__btns main__btns_bot main__btns_hide">
+                            <button class="main__btn btn">
+                                <span class="btn__text">СВОЯ СТЕЗЯ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ОКНО ОТВОРЕНО</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">КОНТАКТЫ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ФОТОГАЛЕРЕЯ</span></button>
+                            <button class="main__btn btn">
+                                <span class="btn__text">ГЛОССАРИЙ</span></button>
+                        </div>
+                    </div>
+                    <a class="main__logo" href="#"><img class="main__pic" src="img/logo.png"></a>
+                    <div class="main__balance balance">
+                        <div class="balance__title">Балансировка энергосистемы</div>
+                        <div class="balance__row">
+                            <a class="balance__item" href="#">
+                                <div class="balance__text">Набор энергии</div>
+                                <div class="balance__preview"><img class="balance__pic" src="img/pic-3.png"></div>
+                            </a>
+                            <div class="balance__man"><img class="balance__pic" src="img/man.png"></div>
+                            <a class="balance__item" href="#">
+                                <div class="balance__text">Энергетическая очистка</div>
+                                <div class="balance__preview"><img class="balance__pic" src="img/pic-4.png"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+
+{% endblock %}

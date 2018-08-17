@@ -1,0 +1,66 @@
+{#}
+{% extends 'base.html.twig' %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+
+            <div class="content">
+                <div class="content__center center">
+                    <p>ФОТОГАЛЕРЕЯ</p>
+                    <p>
+                    Здесь собраны пейзажи из моих личных путешествий. 
+                    Они подобраны и настроены особым образом! Мысленно переносясь в каждый из этих величественных залов Великого Храма Природы, 
+                    Вы получаете возможность вознести свою молитву Создателю в компании дружелюбных Духов этих удивительных мест планеты.<br> 
+                    Кроме того, все фото тематически настроены на гармонизацию энергетики человека, действуют целительно и повышают его вибрации.<br> 
+                    ЭТО МОЙ ДАР ЛЮБВИ ДЛЯ ВСЕХ ГОСТЕЙ САЙТА!</p>
+                </div>
+            </div>
+
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main">
+                <div class="main__center center">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        {{ include('chunks/nav.html.twig') }}
+                    </div>
+                    {#<a class="main__logo" href="#"><img class="main__pic" src="img/logo.png"></a>#}
+                    {#<div class="main__preview"><img class="main__photo" src="img/bird.png"></div>#}
+                    <div class="main__head"><img class="main__img" src="img/head.png"></div>
+                    <div class="main__text">
+                        {#<p>ГАЛЕРЕЯ</p>#}
+                        <p>Здесь собраны пейзажи из моих личных путешествий. Они подобраны и настроены особым образом! Мысленно переносясь в каждый из этих величественных залов Великого Храма Природы, Вы получаете возможность вознести свою молитву Создателю в компании дружелюбных Духов этих удивительных мест планеты.<br>
+                           Кроме того, все фото тематически настроены на гармонизацию энергетики человека, действуют целительно и повышают его вибрации.<br>
+                           ЭТО МОЙ ДАР ЛЮБВИ ДЛЯ ВСЕХ ГОСТЕЙ САЙТА!</p>
+                    </div>
+                    <div class="main__links">
+                        <a class="main__link" href='{{ path('app_homepage_gallery_balance') }}'>
+                            <div class="main__icon"><img class="main__image" src="img/pic-1.png" width="126px"></div>
+                            <div class="main__info">Балансировка энергосистемы</div>
+                        </a>
+                        <a class="main__link" href="{{ path('app_homepage_gallery_harmony') }}">
+                            <div class="main__icon"><img class="main__image" src="img/pic-2.png" width="180px"></div>
+                            <div class="main__info">Гармонизация и оздоровление
+                                <br>физического тела</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

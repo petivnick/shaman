@@ -1,0 +1,36 @@
+{#
+{% extends 'base.html.twig' %}
+
+{% block title %}My cool blog posts{% endblock %}
+
+{% block body %}
+    <div class="out">
+      <ul style="margin: 50px;">
+        <li style="margin-bottom: 20px;"><a href="/home">home</a></li>
+        <li style="margin-bottom: 20px;"><a href="{{ path('app_main') }}">main</a></li>
+        <li style="margin-bottom: 20px;"><a href="{{ path('app_balance') }}">balance</a></li>
+        <li style="margin-bottom: 20px;"><a href="harmony.html">harmony</a></li>
+      </ul>
+    </div>
+{% endblock %}
+#}
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main">
+                <div class="main__center center" {{ style }}>
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        {{ include('chunks/nav.html.twig') }}
+                    </div>
+                    {{ include('chunks/main.html.twig') }}
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

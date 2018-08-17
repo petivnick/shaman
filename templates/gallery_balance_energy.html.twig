@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Набор энергии{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main main_balance">
+                <div class="main__center center">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        {{ include('chunks/nav.html.twig') }}
+                    </div>
+                    <!-- <a class="main__logo" href="#"><img class="main__pic" src="img/logo.png"></a> -->
+<p><a class="image-link" title="Это описание изображения" href="/img/bird.png">
+ <img src="/img/bird.png" alt="" /></a>
+</p>
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.image-link').magnificPopup({type: 'image'});
+        });
+    </script>
+{% endblock %}

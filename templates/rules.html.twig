@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Правила{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main">
+                <div class="main__center center" style="background: #112146; -webkit-box-shadow: 0px 0px 13px 9px rgba(7,21,57,1); -moz-box-shadow: 0px 0px 13px 9px rgba(7,21,57,1); box-shadow: 0px 0px 13px 9px rgba(7,21,57,1);">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        {{ include('chunks/nav.html.twig') }}
+                    </div>
+                    {{ include('chunks/rules.html.twig') }}
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}

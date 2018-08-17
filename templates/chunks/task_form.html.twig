@@ -1,0 +1,24 @@
+<div class="form-container">
+    <div>
+        <h3>Заявка на помощь</h3>
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+        {{ form_errors(form) }}
+        {{ form_widget(form) }}
+        {#                            
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+        #}
+        <div style="text-align: center;">
+            <button type="submit" class="form-btn btn-default">Отправить</button>
+        </div>
+        {{ form_end(form) }}
+        {#}
+            {% for msg in app.session.flashBag.get('success') %}
+                <div class="alert alert-success">
+                    {{ msg }}
+                </div>
+            {% endfor %}                        
+#}
+    </div>
+</div>

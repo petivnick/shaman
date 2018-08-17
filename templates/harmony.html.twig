@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Гармонизация и оздоровление физического тела{% endblock %}
+
+{% block body %}
+    <div class="out">
+        <div class="wrapper">
+            <div class="main main_harmony">
+                <div class="main__center center">
+                    <button class="main__burger js-burger"></button>
+                    <div class="main__control js-control">
+                        {{ include('chunks/nav.html.twig') }}
+                    </div>
+                        <!--<a class="main__logo" href="#"><img class="main__pic" src="img/logo.png"></a>-->
+                        <div class="main_harmony harmony">
+                            <div class="harmony__title">Гармонизация и оздоровление
+                                <br>физического тела</div>
+                            <div class="harmony__wrap">
+                                <a class="harmony__item harmony__item_3" href="#">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-3.png" width="285px"></div>
+                                </a>
+                                <a class="harmony__item harmony__item_1" href="{{ path('app_homepage_gallery_harmony_list', {'page': 1}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-1.png" width="146px"></div>
+                                    <div class="harmony__text">Кровеносная
+                                        <br>система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_2" href="{{ path('app_homepage_gallery_harmony_list', {'page': 2}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-2.png" width="116px"></div>
+                                    <div class="harmony__text">Нервная система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_4" href="{{ path('app_homepage_gallery_harmony_list', {'page': 3}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-4.png" width="136px"></div>
+                                    <div class="harmony__text">Дыхательная система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_5" href="{{ path('app_homepage_gallery_harmony_list', {'page': 4}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-5.png" width="100px"></div>
+                                    <div class="harmony__text">Выделительная
+                                        <br>система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_6" href="{{ path('app_homepage_gallery_harmony_list', {'page': 5}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-6.png" width="86px"></div>
+                                    <div class="harmony__text">Пищеварительная и
+                                        <br>эндокринная системы</div>
+                                </a>
+                                <a class="harmony__item harmony__item_7" href="{{ path('app_homepage_gallery_harmony_list', {'page': 6}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-7.png" width="105px"></div>
+                                    <div class="harmony__text">Мужская
+                                        <br>репродуктивная
+                                        <br>система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_8" href="{{ path('app_homepage_gallery_harmony_list', {'page': 7}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-8.png" width="141px"></div>
+                                    <div class="harmony__text">Женская
+                                        <br>репродуктивная
+                                        <br>система</div>
+                                </a>
+                                <a class="harmony__item harmony__item_9" href="{{ path('app_homepage_gallery_harmony_list', {'page': 8}) }}">
+                                    <div class="harmony__preview"><img class="harmony__pic" src="img/system-9.png" width="123px"></div>
+                                    <div class="harmony__text">Опорно-двигательная
+                                        <br>система</div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            {{ include('chunks/footer.html.twig') }}
+        </div>
+    </div>
+{% endblock %}
